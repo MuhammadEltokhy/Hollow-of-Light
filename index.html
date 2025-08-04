@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight | A Dark And Captivating Adventure</title>
+    <meta name="description" content="Enter the ruined kingdom of Hallownest in Hollow Knight, a classically styled 2D action adventure with gorgeous hand-drawn art.">
+    <link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/characterprofile/images/7/7b/The_Knight_%28Hollow_Knight%29.png/revision/latest?cb=20230623081057">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+    
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 hero-pattern">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg?t=1695270428" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 fade-in delay-100">ENTER THE WORLD OF <span class="text-gray-300">HOLLOW KNIGHT</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto fade-in delay-200">Forge your own path in Hollow Knight! 
+                    An epic action adventure through a vast ruined kingdom of insects and heroes. 
+                    Explore twisting caverns, battle tainted creatures and befriend bizarre bugs.</p>
+            <div class="fade-in delay-300">
+                <a href="#purchase" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 inline-block mr-4">BUY NOW</a>
+                <a href="#trailer" class="border border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-black transition duration-300 inline-block">WATCH TRAILER</a>
+            </div>
+            <div class="mt-16 floating">
+                <a href="#about" class="text-white animate-bounce">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 fade-in">
+                    <img src="https://sm.ign.com/ign_nordic/review/h/hollow-kni/hollow-knight-review_p8ga.jpg" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 fade-in delay-100">
+                    <h2 class="text-3xl font-bold mb-6">A VAST OPEN WORLD</h2>
+                    <p class="text-gray-700 mb-4">Hollow Knight is a classically styled 2D action adventure with gorgeous hand-drawn art and an epic orchestral score. Explore twisting caverns, ancient cities and deadly wastes. Battle tainted creatures and befriend bizarre bugs. Solve ancient mysteries buried at the kingdom's heart.</p>
+                    <p class="text-gray-700 mb-6">As the enigmatic Hollow Knight, you'll traverse the depths, unravel its mysteries and conquer its evils. Discover a huge interconnected world of forgotten highways, overgrown wilds and ruined cities.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-8 4m0 0L4 7m8 4v5.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span>Metroidvania-style progression</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                            </div>
+                            <span>Deep lore and mystery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">CORE FEATURES</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Vast Interconnected World</h3>
+                    <p class="text-gray-700">Explore a sprawling underground realm of forests, cities and wastelands, with over 140 challenging enemies and 30 epic bosses.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 fade-in delay-100">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Classic Combat</h3>
+                    <p class="text-gray-700">Tight, tactical melee combat with precise controls, absorbing foes' souls to heal yourself and fuel devastating spells.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 fade-in delay-200">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0 3.35a1.724 1.724 0 001.066 2.573c-.94 1.543.826 3.31 2.37 2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Customize Your Play</h3>
+                    <p class="text-gray-700">Equip powerful Charms! These mystical artifacts grant the Knight new abilities and strengths. Mix and match to create your own unique playstyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">EXPLORE HALLOWNEST</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="https://pbs.twimg.com/media/E7oTpIcXEAA-hoP.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-xl font-bold">Fungal Wastes</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="https://wallpapercave.com/wp/wp11937393.jpg" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-xl font-bold">City of Tears</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg">
+                    <img src="https://static.wikia.nocookie.net/hollowknight/images/9/9d/Screenshot_HK_Crystal_Peak_02.png/revision/latest?cb=20190221222024" 
+                    alt="Crystal Peak with shining geodes and hazardous crystals" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-xl font-bold">Crystal Peak</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="purchase" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-16">AVAILABLE NOW</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-100 rounded-lg p-8 mb-8 fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png" alt="Hollow Knight game cover - The Knight standing with nail drawn" class="mx-auto mb-6 rounded shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Hollow Knight</h3>
+                    <p class="text-gray-700 mb-6">Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes.</p>
+                    <div class="text-3xl font-bold mb-8">$14.99</div>
+                    <button class="bg-black text-white font-bold py-3 px-10 rounded-full hover:bg-gray-800 transition duration-300 mx-2">BUY NOW</button>
+                    <button class="border border-black text-black font-bold py-3 px-10 rounded-full hover:bg-gray-200 transition duration-300 mx-2">WISHLIST</button>
+                </div>
+                <p class="text-gray-500">Available on PC, Nintendo Switch, PlayStation 4, Xbox One, and macOS</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <img src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/11708219/hollow_knight_guide.jpg?quality=90&strip=all&crop=0,2.8379772961816,100,94.324045407637" alt="Hollow Knight logo - A stylized white knight silhouette with glowing eyes" class="mr-2 h-20">
+                        <span class="text-xl font-bold text-white">HOLLOW KNIGHT</span>
+                    </a>
+                    <p class="mt-2">© 2023 Team Cherry. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .386.044.762.122 1.12-4.089-.205-7.719-2.164-10.148-5.144-.424.728-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.414.111-.847.171-1.296.171-.314 0-.621-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.397 0-.79-.023-1.175-.068 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.507 14-14 0-.213-.006-.427-.015-.636.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-sm">© 2018 Hollow Knight. All trademarks and registered trademarks are the property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
