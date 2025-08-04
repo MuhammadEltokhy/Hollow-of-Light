@@ -34,6 +34,14 @@
         .hero-pattern {
             background-image: radial-gradient(circle at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%);
         }
+        @keyframes slide-down {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        [group][open] > summary ~ * {
+            animation: slide-down 0.3s ease-out;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -111,11 +119,9 @@
         </div>
     </section>
 
-    <!-- Features section converted to sidebar -->
     <section id="features" class="py-20 bg-gray-100 relative">
         <div class="container mx-auto px-4">
             <div class="flex">
-                <!-- Sidebar -->
                 <div class="w-80 bg-white shadow-lg rounded-lg p-8 mr-8 sticky top-24 h-fit">
                     <h2 class="text-2xl font-bold mb-8 text-center">CORE FEATURES</h2>
                     <div class="space-y-8">
@@ -149,8 +155,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Main content area -->
                 <div class="flex-1">
                     <div class="bg-white rounded-lg shadow-lg p-8">
                         <h3 class="text-2xl font-bold mb-6">Game Details</h3>
@@ -222,6 +226,49 @@
                     <button class="border border-black text-black font-bold py-3 px-10 rounded-full hover:bg-gray-200 transition duration-300 mx-2">WISHLIST</button>
                 </div>
                 <p class="text-gray-500">Available on PC, Nintendo Switch, PlayStation 4, Xbox One, and macOS</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-white rounded-lg shadow-md p-6 group">
+                    <summary class="text-xl font-bold cursor-pointer list-none marker:hidden">
+                        <span class="flex justify-between items-center">
+                            <span>Is Hollow Knight a difficult game?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-700 mt-4">Yes, Hollow Knight is known for its challenging gameplay. Players must master precise platforming, timing, and combat skills. However, with practice and exploration, the game becomes deeply rewarding.</p>
+                </details>
+
+                <details class="bg-white rounded-lg shadow-md p-6 group">
+                    <summary class="text-xl font-bold cursor-pointer list-none marker:hidden">
+                        <span class="flex justify-between items-center">
+                            <span>How long does it take to complete Hollow Knight?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-700 mt-4">A standard playthrough takes around 25-30 hours. Completionists aiming for 100% can expect to spend over 50 hours exploring every secret and conquering every boss.</p>
+                </details>
+
+                <details class="bg-white rounded-lg shadow-md p-6 group">
+                    <summary class="text-xl font-bold cursor-pointer list-none marker:hidden">
+                        <span class="flex justify-between items-center">
+                            <span>What platforms is Hollow Knight available on?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-700 mt-4">Hollow Knight is available on PC, macOS, Nintendo Switch, PlayStation 4, and Xbox One. It runs smoothly across all platforms with gamepad and keyboard support.</p>
+                </details>
             </div>
         </div>
     </section>
